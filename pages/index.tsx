@@ -57,10 +57,23 @@ export default function Home() {
     grid-column:1;
     padding: 0 3rem;
     }
+    .logo{
+      animation: circle 2s ;
+    }   
+    @keyframes circle {
+  0% { clip-path: circle(5%); }
+  25% { clip-path: circle(15%); }
+  50% { clip-path: circle(25%); }
+  100% { clip-path: circle(75%); }
+}
 `}
       </style>
       <div style={`max-width: 500px;margin: auto;`}>
-        <img src={suryaImage} style={`width: 100%;height: auto;`} />
+        <img
+          className="logo"
+          src={suryaImage}
+          style={`width: 100%;height: auto;`}
+        />
         <ul style="padding:0">
           <li className="menu-item">Cursos</li>
           <li className="menu-item">Clases</li>
