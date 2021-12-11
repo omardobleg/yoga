@@ -6,8 +6,9 @@ export default function Home() {
   return (
     <section className="cards">
       <link
-        rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Alatsi"
+        async
+        rel="preconnect"
       />
       <style>
         {`
